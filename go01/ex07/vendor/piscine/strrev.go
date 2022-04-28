@@ -14,6 +14,9 @@ func StrRev(s string) string {
 	tmp  := []rune(s)
 
 	s_i = StrLen(s)
+	if (s_i == 0) {
+		return s
+	}
 	for i:= 0; i <= s_i; i++ {
 		rev[i] = tmp[s_i - i]
 	}

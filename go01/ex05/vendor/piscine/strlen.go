@@ -6,5 +6,5 @@ func StrLen(s string) int {
 	for i, _ := range s {
 		str_length = i
 	}
-	return (str_length)
+	return (str_length + 1)
 }

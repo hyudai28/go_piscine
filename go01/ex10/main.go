@@ -15,5 +15,4 @@ func main() {
 	fmt.Println(piscine.Atoi("-1234"))
 	fmt.Println(piscine.Atoi("++1234"))
 	fmt.Println(piscine.Atoi("--1234"))
-
 }
