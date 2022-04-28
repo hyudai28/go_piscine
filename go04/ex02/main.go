@@ -1,8 +1,11 @@
 package main
 
-import "piscine"
+import (
+	"piscine"
+)
 
 
 func main() {
-	piscine.revParams()
+	piscine.RevParams()
+	//piscine.PrintArray(os.Args)
 }
