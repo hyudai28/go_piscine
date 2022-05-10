@@ -20,4 +20,5 @@ func PrintComb2() {
 	for left := 0; left <= 98; left++ {
 		count_right(left)
 	}
+	ft.PrintRune('\n')
 }
