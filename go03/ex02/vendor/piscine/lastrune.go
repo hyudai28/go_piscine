@@ -13,5 +13,8 @@ func LastRune(s string) rune {
 	s_slice := []rune(s)
 
 	var str_length = Strlen(s)
+	if str_length == 0 {
+		return 0
+	}
 	return s_slice[str_length]
 }
