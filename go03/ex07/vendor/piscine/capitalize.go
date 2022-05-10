@@ -32,3 +32,4 @@ func Capitalize(s string) string {
 	}
 	return (string)(lower_s)
 }
+残りはlowerにする

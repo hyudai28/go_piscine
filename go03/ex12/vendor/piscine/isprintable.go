@@ -2,7 +2,7 @@ package piscine
 
 func IsPrintable(s string) bool {
 	for _, c := range s {
-		if !('!' <= c && c <= '~') {
+		if !(' ' <= c && c <= '~') {
 			return false
 		}
 	}
