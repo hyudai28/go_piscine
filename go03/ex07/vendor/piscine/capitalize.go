@@ -25,6 +25,9 @@ func Capitalize(s string) string {
 			}
 		}
 		if (isAlpha(c) || isDigit(c)) {
+			if 'A' <= c && c <= 'Z' {
+				lower_s[i] += 32
+			}
 			before_c = false
 		} else {
 			before_c = true
@@ -32,4 +35,3 @@ func Capitalize(s string) string {
 	}
 	return (string)(lower_s)
 }
-残りはlowerにする
