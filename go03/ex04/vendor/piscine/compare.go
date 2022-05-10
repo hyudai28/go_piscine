@@ -2,10 +2,10 @@ package piscine
 
 func Strlen(s string) int {
 	var str_length int = 0
-	for i, _ := range s {
-		str_length = i
+	for range s {
+		str_length++
 	}
-	return str_length + 1
+	return str_length
 }
 
 func Compare(a, b string) int {
