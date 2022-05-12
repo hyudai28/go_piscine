@@ -22,15 +22,19 @@ func Capitalize(s string) string {
 		if before_c == true {
 			if 'a' <= c && c <= 'z' {
 				lower_s[i] -=  32
+				before_c = false
+			} else if (isAlpha(c) || isDigit(c)) {
+				before_c = false
 			}
-		}
-		if (isAlpha(c) || isDigit(c)) {
-			if 'A' <= c && c <= 'Z' {
-				lower_s[i] += 32
-			}
-			before_c = false
 		} else {
-			before_c = true
+			if (isAlpha(c) || isDigit(c)) {
+				if 'A' <= c && c <= 'Z' {
+					lower_s[i] += 32
+				}
+				before_c = false
+			} else {
+				before_c = true
+			}
 		}
 	}
 	return (string)(lower_s)
