@@ -11,5 +11,6 @@ func main() {
 	ft.PrintRune(piscine.NRune("Bye!", -1))
 	ft.PrintRune(piscine.NRune("Bye!", 5))
 	ft.PrintRune(piscine.NRune("Ola!", 4))
+	ft.PrintRune(piscine.NRune("a", 1))
 	ft.PrintRune('\n')
 }

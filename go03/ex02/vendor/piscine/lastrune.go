@@ -3,8 +3,8 @@ package piscine
 
 func Strlen(s string) int {
 	var str_length int = 0
-	for i, _ := range s {
-		str_length = i
+	for range s {
+		str_length++
 	}
 	return str_length
 }
@@ -16,5 +16,6 @@ func LastRune(s string) rune {
 	if str_length == 0 {
 		return 0
 	}
+	str_length -= 1
 	return s_slice[str_length]
 }
