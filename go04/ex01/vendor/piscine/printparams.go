@@ -12,7 +12,7 @@ func printLine(line string) {
 	ft.PrintRune('\n')
 }
 
-func printparams() {
+func Printparams() {
     for i, v := range os.Args {
 		if i >= 1 {
 			printLine(v)

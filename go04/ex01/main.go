@@ -4,5 +4,5 @@ import "piscine"
 
 
 func main() {
-	piscine.printparams()
+	piscine.Printparams()
 }
